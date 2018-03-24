@@ -1,17 +1,17 @@
 package com.felicityinfo.appOne.school;
 
-public class user {
+public class User {
 	private String type;
 	private String Name;
 	private String studentClass;
 	
 	
 	
-	public user() {
+	public User() {
 		super();
 	}
 
-	public user(String type, String name, String studentClass) {
+	public User(String type, String name, String studentClass) {
 		super();
 		this.type = type;
 		Name = name;

@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.felicityinfo.appOne.been.Hellow;
+import com.felicityinfo.appOne.school.User;
 
 public class App 
 {
@@ -24,7 +25,31 @@ public class App
     	System.out.println("==========h2============");
     	System.out.println(h2.getMsg());
     	
+    	//TODO: create one student
+    	User student1 = (User) ctx.getBean("studentBean");
+    	student1.setName("mike");
+    	student1.setStudentClass("ssc");
     	
+    	System.out.println("==========student 1============");
+    	System.out.println(student1);
+    	
+    	
+    	//TODO: create one more teacher
+    	User teachingStaff1 = (User) ctx.getBean("teachstaffBean");
+    	teachingStaff1.setName("scoot");
+    	teachingStaff1.setStudentClass("inter1");
+    	
+    	System.out.println("==========teachingStaff1 1============");
+    	System.out.println(teachingStaff1);
+    	
+    	
+    	//TODO: create one more accont
+    	User accojntStaff1 = (User) ctx.getBean("accountstaffBean");
+    	accojntStaff1.setName("blis");
+    	accojntStaff1.setStudentClass("Btec");
+    	
+    	System.out.println("==========accojntStaff1 1============");
+    	System.out.println(accojntStaff1);
     	
     	
     	/*
