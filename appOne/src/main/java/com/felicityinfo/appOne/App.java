@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.felicityinfo.appOne.been.Hellow;
 import com.felicityinfo.appOne.school.User;
+import com.felicityinfo.appOne.school.assets.Printer;
 
 public class App 
 {
@@ -50,6 +51,13 @@ public class App
     	
     	System.out.println("==========accojntStaff1 1============");
     	System.out.println(accojntStaff1);
+    	
+    	
+    	//-------------------------------------------
+    	Printer printer1= (Printer) ctx.getBean("printer");
+    	System.out.println("==========printer============");
+    	printer1.printBook();
+    	
     	
     	
     	/*

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="printer" name="printer" class="com.felicityinfo.appOne.school.assets.Printer">
+		<property name="book" ref="book1"></property>
+	</bean>
+
+
+	<bean id="book1" name="book1" class="com.felicityinfo.appOne.school.assets.Book">
+		<property name="title" value="Advance java at ssn"></property>
+		<property name="author" value="syed ahamed"></property>
+	</bean>
+	
+</beans>
