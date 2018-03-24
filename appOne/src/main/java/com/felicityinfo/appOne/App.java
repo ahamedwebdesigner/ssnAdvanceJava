@@ -13,7 +13,7 @@ public class App
     {
         
     	//2
-    	ApplicationContext ctx = new ClassPathXmlApplicationContext("application-context.xml");
+    	ApplicationContext ctx = new ClassPathXmlApplicationContext(new String[] {"application-context.xml","School-context.xml","assets.xml"});
     	
     	
     	

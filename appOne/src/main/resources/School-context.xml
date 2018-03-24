@@ -9,6 +9,10 @@
 
 <bean id="studentBean" name ="studentBean" class="com.felicityinfo.appOne.school.User">
 	<property name="type" value="student"></property>
+	
+	
+	
+	
 </bean>
 
 <bean id="teachstaffBean" name ="teachstaffBean" class="com.felicityinfo.appOne.school.User">
