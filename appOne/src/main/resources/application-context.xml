@@ -7,9 +7,7 @@
 		name="hellowMessageBean"
 		class="com.felicityinfo.appOne.been.Hellow">
 		<property name="msg" value="Hellow All form Application context"></property>
-	
 		<constructor-arg index="0" value="Scott"></constructor-arg>
-		
 		</bean>
 
 </beans>

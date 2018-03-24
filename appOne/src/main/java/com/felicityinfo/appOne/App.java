@@ -13,6 +13,8 @@ public class App
     	//2
     	ApplicationContext ctx = new ClassPathXmlApplicationContext("application-context.xml");
     	
+    	
+    	
     	Hellow h1 =  ctx.getBean("hellowMessageBean",Hellow.class);
     	//System.out.println(h1.getMessage());
     	System.out.println("==========h1============");

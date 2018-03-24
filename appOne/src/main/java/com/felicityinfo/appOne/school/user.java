@@ -5,6 +5,12 @@ public class user {
 	private String Name;
 	private String studentClass;
 	
+	
+	
+	public user() {
+		super();
+	}
+
 	public user(String type, String name, String studentClass) {
 		super();
 		this.type = type;

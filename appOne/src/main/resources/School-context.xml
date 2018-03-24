@@ -7,6 +7,16 @@
 <!-- 2) teaching staff -->
 <!--  3) account staff  -->
 
+<bean id="studentBean" name ="studentBean" class="com.felicityinfo.appOne.school.user">
+	<property name="type" value="student"></property>
+</bean>
 
+<bean id="teachstaffBean" name ="teachstaffBean" class="com.felicityinfo.appOne.school.user">
+	<property name="type" value="teachingStaff"></property>
+</bean>
+
+<bean id="accountstaffBean" name ="accountstaffBean" class="com.felicityinfo.appOne.school.user">
+	<property name="type" value="accountStaff"></property>
+</bean>
 
 </beans>
