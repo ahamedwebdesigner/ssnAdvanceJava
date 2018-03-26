@@ -13,7 +13,9 @@ public class App
     {
         
     	//2
-    	ApplicationContext ctx = new ClassPathXmlApplicationContext(new String[] {"application-context.xml","School-context.xml","assets.xml"});
+    	ApplicationContext ctx = new ClassPathXmlApplicationContext(new String[] {"application-context.xml",
+    																			  "School-context.xml",
+    																			  "assets.xml"});
     	
     	
     	
