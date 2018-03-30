@@ -13,4 +13,10 @@
 		<constructor-arg index="0" value="Scott"></constructor-arg>
 		</bean>
 
+<!-- name = name fo the defined bean alias = new name -->
+<alias name="hellowMessageBean" alias="hellow"/>
 </beans>
+
+
+
+

@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/resources/School-context.xml</config>
 		<config>src/main/resources/assets.xml</config>
+		<config>src/main/resources/context-beans.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

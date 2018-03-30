@@ -15,11 +15,13 @@ public class App
     	//2
     	ApplicationContext ctx = new ClassPathXmlApplicationContext(new String[] {"application-context.xml",
     																			  "School-context.xml",
-    																			  "assets.xml"});
+    																			  "assets.xml",
+    																			  //"undefined.xml"
+    																			  });
     	
     	
     	
-    	Hellow h1 =  ctx.getBean("hellowMessageBean",Hellow.class);
+    	Hellow h1 =  ctx.getBean("hellow",Hellow.class);
     	//System.out.println(h1.getMessage());
     	System.out.println("==========h1============");
     	System.out.println(h1.getMsg());
