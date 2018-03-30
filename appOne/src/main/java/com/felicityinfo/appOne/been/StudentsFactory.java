@@ -1,13 +1,15 @@
 package com.felicityinfo.appOne.been;
 
+
+// static factory
 public class StudentsFactory {
-	//
-	private static StudentsFactory stuFactory = new StudentsFactory();
 	
-	
-	
+
 	public static StudentsFactory getStudentsFactory() {
-        return stuFactory;
+		// make a service call
+		// make a database call
+		// do soem logic 
+        return new StudentsFactory();
     }
 	
 	public String getSomeObject(int stuNo) {

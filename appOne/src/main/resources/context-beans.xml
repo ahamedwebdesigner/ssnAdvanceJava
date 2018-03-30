@@ -8,4 +8,24 @@
       name="studentsFactory" 
       class="com.felicityinfo.appOne.been.StudentsFactory"
       factory-method = "getStudentsFactory"> </bean>
+      
+      
+<bean id="staffFactory"
+		name ="staffFactory"
+		class="com.felicityinfo.appOne.been.staffFactory"></bean>
+		
+
+<!-- the bean to be created via the factory bean -->
+<bean id="noTeahingstaff"
+    factory-bean="staffFactory"
+    factory-method="getNonteachingStaff"/>
+    
+ <bean id="Teahingstaff"
+    factory-bean="staffFactory"
+    factory-method="getTeachingStaff"/>
+       
+    		
 </beans>
+
+
+
