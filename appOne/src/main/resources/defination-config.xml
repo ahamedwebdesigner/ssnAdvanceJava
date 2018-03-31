@@ -9,20 +9,40 @@
 	   >
 	   
 	<!--     
-			  //by type
+			  //1 by type
 	          <constructor-arg type="int" value="89934"/>
               <constructor-arg type="java.lang.String" value="syed"/> -->
         
     <!--     
-    		// By index
+    		// 2 By index
          <constructor-arg index="0" value="8998"/>
-        <constructor-arg index="1" value="savings"/> 
+         <constructor-arg index="1" value="savings"/> 
+        
+         -->
+        
+   <!--  
+         //3 calling 3 arg constru     
+         <constructor-arg index="0" value="8998"/>
+         <constructor-arg index="1" value="savings"/>
+         <constructor-arg index="2">
+         	<null/>
+         </constructor-arg> -->
         
         
-        -->
-        
-        
+<!--      //4      
+          <constructor-arg type="int" value="89934"/>
+          <constructor-arg type="java.lang.String" value="syed"/>
+          <constructor-arg type="com.felicityinfo.appOne.bank.user.BankUser" ref="BankUser"/> -->
+	      
+	      
+	      
 	   </bean>
 
 
+       <bean id ="BankUser"
+               name ="BankUser"
+                class="com.felicityinfo.appOne.bank.user.BankUser">
+	          	<property name="userName" value="Syed"/>
+	          	<property name="address" value="Marathalli"></property>
+	          </bean>
 </beans>

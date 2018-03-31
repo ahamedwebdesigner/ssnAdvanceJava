@@ -12,23 +12,26 @@ public class Account {
 	}
 
 	public Account(int accountNO, String accountType) {
+		System.out.println("======> 2 arg constructor is called");
 		AccountNO = accountNO;
 		AccountType = accountType;
 	}
 	
 	
-
-
-
-
-
-
+	public Account(int accountNO, String accountType, BankUser bankUser) {
+		super();
+		System.out.println("3 arg constructor is called");
+		AccountNO = accountNO;
+		AccountType = accountType;
+		this.bankUser = bankUser;
+	}
 
 	@Override
 	public String toString() {
-		return "Account [AccountNO=" + AccountNO + ", AccountType=" + AccountType + "]";
+		return "Account [AccountNO=" + AccountNO + ", AccountType=" + AccountType + ", bankUser=" + bankUser + "]";
 	}
-	
+
+
 	
 	
 }
