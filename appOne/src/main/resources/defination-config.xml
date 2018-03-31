@@ -3,14 +3,15 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 	
-	
+	default-init-method="init"
+	default-destroy-method="destroy"
 	>
 
 <bean id="Account"
 	   name="account"
 	   class="com.felicityinfo.appOne.bank.Account"
-	   init-method="init"
-	   destroy-method="destroy"
+		init-method="init"
+        destroy-method="destroyAll"
 	   >
 	   
 	<!--     

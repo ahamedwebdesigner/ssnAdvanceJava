@@ -16,6 +16,10 @@ public class Account {
 		System.out.println("*********************** Account beam destroy **********");
 	}
 	
+	public void destroyAll() {
+		System.out.println("*********************** Account beam destroyAll **********");
+	}
+	
 
 	
 	
