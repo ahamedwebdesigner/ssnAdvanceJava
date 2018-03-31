@@ -14,7 +14,7 @@ public class MainApp {
 			
 		System.out.println("===========================================================\n\n");
 		StudentsFactory sf = ctx.getBean("StudentsFactory",StudentsFactory.class);
-		System.out.println(sf.getSomeObject(3000));
+		System.out.println(sf.getSomeObject(3000,"syed"));
 		
 		
 		TeachingStaff ts = ctx.getBean("Teahingstaff",TeachingStaff.class);

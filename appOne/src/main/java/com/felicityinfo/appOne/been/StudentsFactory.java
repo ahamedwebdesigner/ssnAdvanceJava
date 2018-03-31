@@ -12,8 +12,8 @@ public class StudentsFactory {
         return new StudentsFactory();
     }
 	
-	public String getSomeObject(int stuNo) {
-		return " student object with "+ stuNo + "is given";
+	public String getSomeObject(int stuNo,String name) {
+		return " student object with "+ stuNo + "is given weith name "+name;
 		
 	}
 }
