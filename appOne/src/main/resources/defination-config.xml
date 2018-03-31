@@ -35,7 +35,19 @@
           <constructor-arg type="com.felicityinfo.appOne.bank.user.BankUser" ref="BankUser"/> -->
 	      
 	      
+<!-- 	        
+         // 5 constructor argument order matters  while injucting by index
+         
+         <constructor-arg index="0" ref="BankUser"/> 
+	      <constructor-arg index="1" value="8998"/>
+         <constructor-arg index="2" value="savings"/> 
+      -->
 	      
+	      
+          <constructor-arg index="0" ref="BankUser"/> 
+	      <constructor-arg index="1" value="8998"/>
+         <constructor-arg index="2" value="savings"/> 
+          
 	   </bean>
 
 

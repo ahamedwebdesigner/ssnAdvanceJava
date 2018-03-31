@@ -18,7 +18,7 @@ public class Account {
 	}
 	
 	
-	public Account(int accountNO, String accountType, BankUser bankUser) {
+	public Account( BankUser bankUser, int accountNO, String accountType) {
 		super();
 		System.out.println("3 arg constructor is called");
 		AccountNO = accountNO;
