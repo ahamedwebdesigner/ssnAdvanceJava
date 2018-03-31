@@ -7,6 +7,18 @@ public class Account {
 	String AccountType;
 	BankUser bankUser;
 	
+	
+	public void init() {
+		System.out.println("*********************** Account beam creaed **********");
+	}
+	
+	public void destroy() {
+		System.out.println("*********************** Account beam destroy **********");
+	}
+	
+
+	
+	
 	public Account() {
 		super();
 	}
