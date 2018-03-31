@@ -61,6 +61,24 @@
           -->
          
          
+     
+         <constructor-arg index="0"> 
+	            <bean  class="com.felicityinfo.appOne.bank.user.BankUser">
+		          	<property name="userName" value="Syed"/>
+		          	<property name="address" value="Marathalli"></property>
+		          </bean>
+	      </constructor-arg>
+          
+	     <constructor-arg index="1" value="8998"/>
+         <constructor-arg index="2" value="savings"/> 
+         
+        <property name="bankUser">
+            <bean  class="com.felicityinfo.appOne.bank.user.BankUser">
+		        <property name="userName" value="Mustaq Ahamed"/>
+		        <property name="address" value="Anantapur"></property>
+		     </bean>
+         </property>
+         
           
 	   </bean>
 

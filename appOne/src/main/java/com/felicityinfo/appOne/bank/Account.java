@@ -25,6 +25,34 @@ public class Account {
 		AccountType = accountType;
 		this.bankUser = bankUser;
 	}
+	
+	
+	
+	
+
+	public int getAccountNO() {
+		return AccountNO;
+	}
+
+	public void setAccountNO(int accountNO) {
+		AccountNO = accountNO;
+	}
+
+	public String getAccountType() {
+		return AccountType;
+	}
+
+	public void setAccountType(String accountType) {
+		AccountType = accountType;
+	}
+
+	public BankUser getBankUser() {
+		return bankUser;
+	}
+
+	public void setBankUser(BankUser bankUser) {
+		this.bankUser = bankUser;
+	}
 
 	@Override
 	public String toString() {
