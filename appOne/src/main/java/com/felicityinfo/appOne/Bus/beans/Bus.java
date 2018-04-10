@@ -1,24 +1,37 @@
 package com.felicityinfo.appOne.Bus.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 @Component
+//@Service
+//@Repository
 public class Bus {
 	public int serviceNo;
 	public String form;
 	public String to;
 
+	@Autowired
+	public Driver driver;
 	
 	
-	public Bus() {
-		super();
+	
+	public void setDriver(Driver driver) {
+		this.driver = driver;
 	}
 
-	public Bus(int serviceNo, String form, String to) {
+	public Bus() {
 		super();
 		this.serviceNo = 9897;
 		this.form = "Bangalore";
 		this.to = "Anantapur";
+	}
+
+	public Bus(int serviceNo, String form, String to) {
+		super();
+		
 	}
 
 	public int getServiceNo() {
@@ -47,7 +60,9 @@ public class Bus {
 
 	@Override
 	public String toString() {
-		return "Bud [serviceNo=" + serviceNo + ", form=" + form + ", to=" + to + "]";
+		return "Bus [serviceNo=" + serviceNo + ", form=" + form + ", to=" + to + ", driver=" + driver + "]";
 	}
+
+
 
 }
