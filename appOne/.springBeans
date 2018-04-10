@@ -11,6 +11,7 @@
 		<config>src/main/resources/assets.xml</config>
 		<config>src/main/resources/context-beans.xml</config>
 		<config>src/main/resources/defination-config.xml</config>
+		<config>src/main/resources/bus-config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
