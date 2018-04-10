@@ -9,14 +9,16 @@ import com.felicityinfo.appOne.hospital.bean.Hospital;
 @Configuration
 public class HospitalConfig {
 
-	 @Bean
+	 @Bean(name ="GeneralDocter",
+		   initMethod="init_method",
+		   destroyMethod="destroy_method")
 	 public Docter getDocter(){
-		Docter d1 =  new Docter("Jack");
+		Docter d1 =  new Docter("Jack Nicksen");
 				d1.setId(989);
 	      return d1;
 	   }
 	 
-	 @Bean
+	 @Bean()
 	 public Hospital getHospital() {
 		 Hospital h1 = new Hospital(getDocter());
 		 h1.setHname("APOLO");

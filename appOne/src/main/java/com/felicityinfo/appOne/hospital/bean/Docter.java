@@ -8,6 +8,12 @@ public class Docter {
 	public Docter() {super();
 	}
 
+	public void init_method() {
+		System.out.println("=====================Init method called ======================");
+	}
+	public void destroy_method() {
+		System.out.println("=====================destroy_method method called ======================");
+	}
 
 	public Docter(String name) {
 		this.name = name;
